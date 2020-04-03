@@ -1,2 +1,2 @@
 # crushpower
-Lern and grow
+Learn and grow
