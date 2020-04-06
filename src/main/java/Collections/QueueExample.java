@@ -15,7 +15,7 @@ public class QueueExample {
         }
     }
 
-    // create method for sort collections
+    // create method for sort collections with PriorityQueue
     static <E> List<E> heapSort(Collection<E> c) {
         Queue<E> queue = new PriorityQueue<>(c);
         List<E> result = new ArrayList<>();
