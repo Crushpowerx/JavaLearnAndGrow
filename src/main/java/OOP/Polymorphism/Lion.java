@@ -1,4 +1,4 @@
-package polimorphizm;
+package OOP.Polymorphism;
 
 public class Lion extends Animal {
     @Override

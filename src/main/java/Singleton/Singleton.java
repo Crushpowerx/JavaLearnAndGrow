@@ -1,4 +1,4 @@
-package singleton;
+package Singleton;
 
 public class Singleton {
     private static Singleton instance;
