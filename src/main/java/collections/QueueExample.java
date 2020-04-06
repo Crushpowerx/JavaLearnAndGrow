@@ -2,8 +2,8 @@ package collections;
 
 import java.util.*;
 
-public class Queue_example {
-    //    create timer
+public class QueueExample {
+    // create timer
     public static void timerExample() throws InterruptedException {
         int time = 10;
         Queue<Integer> queue = new LinkedList<>();
@@ -15,7 +15,7 @@ public class Queue_example {
         }
     }
 
-    //  create method for sort collections
+    // create method for sort collections
     static <E> List<E> heapSort(Collection<E> c) {
         Queue<E> queue = new PriorityQueue<>(c);
         List<E> result = new ArrayList<>();
