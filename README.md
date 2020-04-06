@@ -1,2 +1,1 @@
-# crushpower
-Learn and grow
+# Learn and grow with CrushPower
