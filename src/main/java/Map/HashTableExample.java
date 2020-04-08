@@ -1,24 +1,24 @@
 package Map;
 
-import java.util.Calendar;
-import java.util.Date;
 import java.util.Hashtable;
 
 public class HashTableExample {
-    public static void main(String[] args) {
-        Hashtable<Student, Integer> myHTable = new Hashtable<>();
-        Student sarah1 = new Student("Sarah","Connor", "Jane", null);
-        Student john = new Student("John","Connor", "Kyle",
-                new Date(1985, Calendar.FEBRUARY, 28)); // date not exists
-        myHTable.put(john,1);
-        myHTable.put(sarah1,0);
-        System.out.println(myHTable.get(john));
-        System.out.println(myHTable.isEmpty());
-        System.out.println(myHTable.size());
-        System.out.println(myHTable.contains(1));
-        myHTable.remove(john);
-        System.out.println(myHTable.contains(0));
-        System.out.println(myHTable.contains(1));
-        System.out.println(myHTable.containsKey(sarah1));
+    public static void main(String[] arg) {
+        String[] animals = {"cat", "dog", "dog", "cat", "bird", "mouse", "mouse"};
+        Hashtable<String, Integer> table = new Hashtable<>();
+
+//        for (String animal : animals) {
+//            table.compute(animal,
+//                    (key, value) -> (value == null ? 1 : value + 1));
+//        }
+
+        for (String animal : animals) {
+//            table.merge(animal, 1, (oldValue, value) -> (oldValue + value));
+            table.merge(animal, 1, Integer::sum); //lambda ^
+        }
+
+        table.forEach((k, v) -> System.out.println(k + " - " + v));
+
+        System.out.println(table);
     }
 }

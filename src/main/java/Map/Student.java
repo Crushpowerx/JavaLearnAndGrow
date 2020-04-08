@@ -21,7 +21,7 @@ public class Student {
     }
     @Override
     public boolean equals(Object other_) {
-        Student other = (Student)other_;
+        Student other = (Student) other_;
         return (surname == null || surname.equals(other.surname) )
                 && (name == null || name.equals(other.name))
                 && (secondName == null || secondName.equals(other.secondName))
