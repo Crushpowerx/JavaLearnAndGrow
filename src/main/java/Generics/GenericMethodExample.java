@@ -17,7 +17,7 @@ public class GenericMethodExample {
 
     public static void main(String[] args) throws InterruptedException {
         List<Integer> integerList = new ArrayList<>();
-//        integerList.add(12);
+        integerList.add(12);
         Integer intValue = getTheFirst(integerList);
         System.out.println(intValue);
         sleep(1000);
