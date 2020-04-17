@@ -1,4 +1,4 @@
-package Api;
+package Api.Server;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -23,6 +23,11 @@ public class UserServiceMapImpl implements UserService {
     @Override
     public User getUser(String id) {
         return userMap.get(id);
+    }
+
+    @Override
+    public String getUserEmail(String id) {
+        return userMap.get(id).getEmail();
     }
 
     @Override

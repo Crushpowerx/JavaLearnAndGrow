@@ -1,4 +1,4 @@
-package Api;
+package Api.Server;
 
 import java.util.Collection;
 
@@ -8,6 +8,8 @@ public interface UserService {
     Collection<User> getUsers();
 
     User getUser(String id);
+
+    String getUserEmail(String id);
 
     User editUser(User user) throws UserException;
 

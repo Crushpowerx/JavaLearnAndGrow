@@ -1,4 +1,4 @@
-package Api;
+package Api.Server;
 
 import com.google.gson.JsonElement;
 
@@ -14,6 +14,12 @@ public class StandardResponse {
     public StandardResponse(StatusResponse status, String message) {
         this.status = status;
         this.message = message;
+    }
+
+    public StandardResponse(StatusResponse status, String message, JsonElement data) {
+        this.status = status;
+        this.message = message;
+        this.data = data;
     }
 
     public StandardResponse(StatusResponse status, JsonElement data) {

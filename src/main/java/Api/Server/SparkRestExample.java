@@ -1,4 +1,4 @@
-package Api;
+package Api.Server;
 
 import com.google.gson.Gson;
 
@@ -10,7 +10,6 @@ public class SparkRestExample {
 
         post("/users", (request, response) -> {
             response.type("application/json");
-
             User user = new Gson().fromJson(request.body(), User.class);
             userService.addUser(user);
 
