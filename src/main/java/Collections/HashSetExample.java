@@ -8,6 +8,7 @@ public class HashSetExample {
         for (int j = 10; j >= 0; j--) {
             int i = (int) (1 + Math.random() * 1000);
             set.add(i);
+            set.add(j);
         }
         System.out.println(set);
     }
