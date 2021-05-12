@@ -1,4 +1,4 @@
-package api.Server;
+package api.server;
 
 public class UserException extends Exception {
 

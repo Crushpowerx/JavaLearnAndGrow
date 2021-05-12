@@ -1,4 +1,4 @@
-package oop.Polymorphism;
+package oop.polymorphism;
 
 public class Lion extends Animal {
     @Override

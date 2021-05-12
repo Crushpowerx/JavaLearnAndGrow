@@ -1,4 +1,4 @@
-package api.Server;
+package api.server;
 
 public enum StatusResponse {
     SUCCESS("Success"), ERROR("Error");

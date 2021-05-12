@@ -1,4 +1,4 @@
-package api.Server;
+package api.server;
 
 import com.google.gson.Gson;
 

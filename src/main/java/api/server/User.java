@@ -1,4 +1,4 @@
-package api.Server;
+package api.server;
 
 class User {
 

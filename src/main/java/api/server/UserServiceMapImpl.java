@@ -1,4 +1,4 @@
-package api.Server;
+package api.server;
 
 import java.util.Collection;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package api.Requests;
+package api.requests;
 
 import com.google.gson.Gson;
 import okhttp3.*;

@@ -1,7 +1,7 @@
-package api.Requests;
+package api.requests;
 
-import static api.Requests.ApiRequestMethods.addNewUser;
-import static api.Requests.ApiRequestMethods.getUsers;
+import static api.requests.ApiRequestMethods.addNewUser;
+import static api.requests.ApiRequestMethods.getUsers;
 import static java.lang.Thread.sleep;
 
 public class ApiRequestExample {
