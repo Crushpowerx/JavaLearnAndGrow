@@ -10,8 +10,8 @@ interface AmericanSocket {
 
 public class Adapter {
     public static void main(String[] args) {
-        AmericanSocket americanSocket = new SimpleAmericanSocket();
         Radio radio = new Radio();
+        AmericanSocket americanSocket = new SimpleAmericanSocket();
         EuroSocket euroSocket = new SocketAdapter(americanSocket);
         radio.listenMusic(euroSocket);
     }
@@ -32,7 +32,6 @@ class Radio {
 }
 
 class SocketAdapter implements EuroSocket {
-
     AmericanSocket americanSocket;
 
     public SocketAdapter(AmericanSocket americanSocket) {
@@ -44,4 +43,3 @@ class SocketAdapter implements EuroSocket {
         americanSocket.getPower();
     }
 }
-
